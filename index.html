@@ -3,26 +3,169 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test Page</title>
+  <title>Sherif Goma — Personal Page</title>
   <style>
-    body {
-      background-color: #4a90d9;
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    h1 {
-      color: #ffffff;
-      font-size: 2.5rem;
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
+      color: #333;
+    }
+
+    /* HEADER */
+    header {
+      background-color: #1a73e8;
+      color: white;
+      padding: 60px 20px;
       text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    /* ABOUT */
+    .about {
+      max-width: 700px;
+      margin: 50px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #1a73e8;
+    }
+
+    .about p {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #555;
+    }
+
+    /* SKILLS */
+    .skills {
+      background-color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .skills h2 {
+      font-size: 1.8rem;
+      margin-bottom: 25px;
+      color: #1a73e8;
+    }
+
+    .skills-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .skill-tag {
+      background-color: #e8f0fe;
+      color: #1a73e8;
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-size: 0.95rem;
+    }
+
+    /* CONTACT */
+    .contact {
+      max-width: 700px;
+      margin: 50px auto 60px;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #1a73e8;
+    }
+
+    .contact p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 25px;
+    }
+
+    .contact a {
+      display: inline-block;
+      background-color: #1a73e8;
+      color: white;
+      padding: 14px 32px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background-color 0.2s;
+    }
+
+    .contact a:hover {
+      background-color: #1558b0;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #333;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85rem;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to the Test Page</h1>
+
+  <header>
+    <h1>Sherif Goma</h1>
+    <p>Welcome to my personal page</p>
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      Hi! I'm Sherif. I'm passionate about technology, problem solving, and building
+      things that make a difference. This is my personal space on the web where I
+      share who I am and what I do.
+    </p>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <span class="skill-tag">Problem Solving</span>
+      <span class="skill-tag">Communication</span>
+      <span class="skill-tag">Technology</span>
+      <span class="skill-tag">Leadership</span>
+      <span class="skill-tag">Creativity</span>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Get In Touch</h2>
+    <p>Have a question or want to connect? Send me an email.</p>
+    <a href="mailto:sherifgoma1@gmail.com">Email Me on Gmail</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Sherif Goma. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
