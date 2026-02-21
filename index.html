@@ -58,31 +58,72 @@
     /* SKILLS */
     .skills {
       background-color: #fff;
-      padding: 40px 20px;
+      padding: 50px 20px;
       text-align: center;
     }
 
     .skills h2 {
       font-size: 1.8rem;
-      margin-bottom: 25px;
+      margin-bottom: 10px;
       color: #1a73e8;
+    }
+
+    .skills > p {
+      color: #777;
+      margin-bottom: 35px;
+      font-size: 1rem;
+    }
+
+    .skills-categories {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .skill-category {
+      background-color: #f8faff;
+      border: 1px solid #dce8fd;
+      border-radius: 12px;
+      padding: 24px 28px;
+      min-width: 220px;
+      flex: 1;
+      max-width: 270px;
+      text-align: left;
+    }
+
+    .skill-category h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #1a73e8;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #e8f0fe;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
     }
 
     .skills-list {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
-      gap: 12px;
-      max-width: 600px;
-      margin: 0 auto;
+      gap: 8px;
     }
 
     .skill-tag {
       background-color: #e8f0fe;
-      color: #1a73e8;
-      padding: 8px 18px;
+      color: #1558b0;
+      padding: 6px 14px;
       border-radius: 20px;
-      font-size: 0.95rem;
+      font-size: 0.88rem;
+      font-weight: 500;
+      transition: background-color 0.2s, color 0.2s;
+    }
+
+    .skill-tag:hover {
+      background-color: #1a73e8;
+      color: #fff;
     }
 
     /* CONTACT */
@@ -148,12 +189,40 @@
 
   <section class="skills">
     <h2>Skills</h2>
-    <div class="skills-list">
-      <span class="skill-tag">Problem Solving</span>
-      <span class="skill-tag">Communication</span>
-      <span class="skill-tag">Technology</span>
-      <span class="skill-tag">Leadership</span>
-      <span class="skill-tag">Creativity</span>
+    <p>A snapshot of what I bring to the table</p>
+    <div class="skills-categories">
+
+      <div class="skill-category">
+        <h3>Technical</h3>
+        <div class="skills-list">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">HTML &amp; CSS</span>
+          <span class="skill-tag">Git</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Professional</h3>
+        <div class="skills-list">
+          <span class="skill-tag">Problem Solving</span>
+          <span class="skill-tag">Leadership</span>
+          <span class="skill-tag">Communication</span>
+          <span class="skill-tag">Project Management</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Creative</h3>
+        <div class="skills-list">
+          <span class="skill-tag">Creativity</span>
+          <span class="skill-tag">UI Design</span>
+          <span class="skill-tag">Storytelling</span>
+          <span class="skill-tag">Critical Thinking</span>
+        </div>
+      </div>
+
     </div>
   </section>
 
