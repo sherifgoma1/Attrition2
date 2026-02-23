@@ -35,6 +35,9 @@
 ## Ignored / Abandoned Branches
 - `claude/update-email-address-Sw2zI` — incorrect change (removed the `1` from email), ignored
 - `claude/test-branch-preview-rv470` — test branch only, no real changes
+- `claude/add-gmail-contact-search-ukBdS` — added Gmail contact search for personal profile; obsolete (site is now generic, no personal info)
+- `claude/improve-profile-description-IEvwh` — elevated profile description tone; obsolete (profile removed when site went generic)
+- `claude/update-skills-section-vb2W6` — redesigned skills section layout; obsolete (skills section removed when site went generic)
 
 ## Current State of Production
 - Manufacturing Control Tower dashboard — dark theme, 6 production lines, KPI cards, SVG bar chart, alert feed
@@ -46,3 +49,4 @@
 - 2026-02-21: Merged bio rewrite and skills expansion into main branch
 - 2026-02-22: Replaced personal profile with generic Coming Soon page
 - 2026-02-23: Merged Manufacturing Control Tower dashboard to production
+- 2026-02-23: Documented 3 abandoned pre-generic branches (Gmail contact, profile description, skills redesign)
