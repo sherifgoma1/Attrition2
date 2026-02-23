@@ -30,17 +30,19 @@
 - `claude/improve-bio-description-MbirI` — rewrote bio with compelling headline and description
 - `claude/update-skills-section-nIjeo` — expanded skills section from 5 to 24 skills
 - `claude/make-page-generic-rv470` — replaced personal info with generic "Coming Soon" page (name, bio, contact removed)
+- `claude/manufacturing-dashboard-rv470` — replaced Coming Soon page with Manufacturing Control Tower dashboard
 
 ## Ignored / Abandoned Branches
 - `claude/update-email-address-Sw2zI` — incorrect change (removed the `1` from email), ignored
 - `claude/test-branch-preview-rv470` — test branch only, no real changes
 
 ## Current State of Production
-- Page is generic / anonymous — no name, no email, no personal bio
-- Skills section still present
+- Manufacturing Control Tower dashboard — dark theme, 6 production lines, KPI cards, SVG bar chart, alert feed
+- No personal info — fully generic/anonymous
 - Safe to be publicly accessible
 
 ## Last Updated
 - 2026-02-21: Green theme set, Netlify connected, branch deploy previews enabled
 - 2026-02-21: Merged bio rewrite and skills expansion into main branch
 - 2026-02-22: Replaced personal profile with generic Coming Soon page
+- 2026-02-23: Merged Manufacturing Control Tower dashboard to production
