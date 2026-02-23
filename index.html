@@ -9,16 +9,16 @@
 
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
-      background: #0f1117;
-      color: #e2e8f0;
+      background: #f8f9fa;
+      color: #0f172a;
       min-height: 100vh;
     }
 
     /* ── HEADER ── */
     header {
-      background: #1a1f2e;
+      background: #ffffff;
       border-bottom: 2px solid #1e8c45;
-      padding: 12px 24px;
+      padding: 14px 28px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -33,9 +33,9 @@
     .logo-dot {
       width: 10px;
       height: 10px;
-      background: #22c55e;
+      background: #1e8c45;
       border-radius: 50%;
-      box-shadow: 0 0 8px #22c55e;
+      box-shadow: 0 0 8px rgba(30,140,69,0.5);
       animation: pulse 2s infinite;
     }
 
@@ -45,10 +45,10 @@
     }
 
     header h1 {
-      font-size: 1.2rem;
+      font-size: 1.15rem;
       font-weight: 700;
-      color: #fff;
-      letter-spacing: 0.05em;
+      color: #0f172a;
+      letter-spacing: 0.04em;
       text-transform: uppercase;
     }
 
@@ -57,7 +57,7 @@
       align-items: center;
       gap: 24px;
       font-size: 0.85rem;
-      color: #94a3b8;
+      color: #475569;
     }
 
     .shift-badge {
@@ -70,18 +70,19 @@
     }
 
     #live-clock {
-      font-family: 'Courier New', monospace;
-      font-size: 0.95rem;
-      color: #cbd5e1;
-      letter-spacing: 0.05em;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #475569;
+      letter-spacing: 0.03em;
     }
 
     /* ── MAIN LAYOUT ── */
     main {
-      padding: 20px 24px;
+      padding: 24px 32px;
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 24px;
       max-width: 1400px;
       margin: 0 auto;
     }
@@ -94,59 +95,73 @@
     }
 
     .kpi-card {
-      background: #1a1f2e;
-      border: 1px solid #2d3748;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
       border-radius: 8px;
-      padding: 18px 20px;
+      padding: 22px 24px 22px 28px;
       position: relative;
       overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
     }
 
     .kpi-card::before {
       content: '';
       position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 3px;
+      top: 0; bottom: 0; left: 0;
+      width: 4px;
+      height: 100%;
     }
 
-    .kpi-card.green::before { background: #22c55e; }
+    .kpi-card.green::before { background: #1e8c45; }
     .kpi-card.blue::before  { background: #3b82f6; }
     .kpi-card.amber::before { background: #f59e0b; }
 
     .kpi-label {
-      font-size: 0.72rem;
+      font-size: 0.8rem;
+      font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.06em;
       color: #64748b;
       margin-bottom: 8px;
     }
 
     .kpi-value {
-      font-family: 'Courier New', monospace;
-      font-size: 2rem;
-      font-weight: 700;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 2.4rem;
+      font-weight: 800;
       line-height: 1;
-      margin-bottom: 6px;
+      margin-bottom: 4px;
+      letter-spacing: -0.02em;
     }
 
-    .kpi-card.green .kpi-value { color: #22c55e; }
-    .kpi-card.blue  .kpi-value { color: #60a5fa; }
-    .kpi-card.amber .kpi-value { color: #fbbf24; }
+    .kpi-card.green .kpi-value { color: #1e8c45; }
+    .kpi-card.blue  .kpi-value { color: #1d4ed8; }
+    .kpi-card.amber .kpi-value { color: #b45309; }
+
+    .kpi-trend {
+      font-size: 0.82rem;
+      font-weight: 700;
+      margin: 4px 0 5px;
+    }
+    .kpi-trend.up   { color: #1e8c45; }
+    .kpi-trend.down { color: #dc2626; }
+    .kpi-trend.flat { color: #64748b; }
 
     .kpi-sub {
-      font-size: 0.75rem;
+      font-size: 0.78rem;
       color: #64748b;
     }
 
     /* ── SECTION TITLE ── */
     .section-title {
-      font-size: 0.72rem;
+      font-size: 0.8rem;
+      font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: #475569;
+      letter-spacing: 0.08em;
+      color: #1e293b;
       margin-bottom: 12px;
       padding-bottom: 6px;
-      border-bottom: 1px solid #1e293b;
+      border-bottom: 1px solid #e2e8f0;
     }
 
     /* ── PRODUCTION LINES ── */
@@ -157,10 +172,11 @@
     }
 
     .line-card {
-      background: #1a1f2e;
-      border: 1px solid #2d3748;
-      border-radius: 8px;
-      padding: 16px;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 18px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     }
 
     .line-header {
@@ -171,8 +187,9 @@
     }
 
     .line-name {
-      font-weight: 600;
-      font-size: 0.9rem;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: #0f172a;
     }
 
     .status-badge {
@@ -193,11 +210,11 @@
       border-radius: 50%;
     }
 
-    .status-running { background: #14532d; color: #22c55e; }
-    .status-running .dot { background: #22c55e; box-shadow: 0 0 6px #22c55e; animation: pulse 2s infinite; }
-    .status-warning { background: #451a03; color: #f59e0b; }
+    .status-running { background: #dcfce7; color: #166534; }
+    .status-running .dot { background: #22c55e; box-shadow: 0 0 6px rgba(34,197,94,0.6); animation: pulse 2s infinite; }
+    .status-warning { background: #fef9c3; color: #92400e; }
     .status-warning .dot { background: #f59e0b; }
-    .status-stopped { background: #450a0a; color: #ef4444; }
+    .status-stopped { background: #fee2e2; color: #991b1b; }
     .status-stopped .dot { background: #ef4444; }
 
     .line-metrics {
@@ -207,24 +224,25 @@
     }
 
     .metric {
-      background: #0f1117;
+      background: #f8fafc;
+      border: 1px solid #f1f5f9;
       border-radius: 6px;
       padding: 10px;
     }
 
     .metric-label {
       font-size: 0.65rem;
-      color: #475569;
+      color: #64748b;
       text-transform: uppercase;
       letter-spacing: 0.06em;
       margin-bottom: 4px;
     }
 
     .metric-value {
-      font-family: 'Courier New', monospace;
-      font-size: 1.1rem;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 1.15rem;
       font-weight: 700;
-      color: #e2e8f0;
+      color: #0f172a;
     }
 
     .speed-bar-wrap { margin-top: 12px; }
@@ -232,15 +250,16 @@
     .speed-bar-label {
       display: flex;
       justify-content: space-between;
-      font-size: 0.68rem;
+      font-size: 0.72rem;
+      font-weight: 600;
       color: #475569;
       margin-bottom: 4px;
     }
 
     .speed-bar-bg {
-      background: #0f1117;
+      background: #e2e8f0;
       border-radius: 4px;
-      height: 6px;
+      height: 8px;
       overflow: hidden;
     }
 
@@ -257,10 +276,11 @@
     }
 
     .chart-card, .alerts-card {
-      background: #1a1f2e;
-      border: 1px solid #2d3748;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
       border-radius: 8px;
       padding: 20px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     }
 
     .alerts-card {
@@ -285,8 +305,9 @@
       display: flex;
       align-items: center;
       gap: 6px;
-      font-size: 0.72rem;
-      color: #64748b;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: #475569;
     }
 
     .legend-swatch {
@@ -300,7 +321,7 @@
       display: flex;
       flex-direction: column;
       gap: 8px;
-      max-height: 220px;
+      max-height: 260px;
     }
 
     .alert-item {
@@ -309,13 +330,27 @@
       gap: 10px;
       padding: 10px;
       border-radius: 6px;
-      background: #0f1117;
+      background: #f8fafc;
     }
 
-    .alert-icon { font-size: 0.9rem; flex-shrink: 0; margin-top: 1px; }
+    .alert-badge {
+      flex-shrink: 0;
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      padding: 2px 7px;
+      border-radius: 3px;
+      white-space: nowrap;
+      align-self: flex-start;
+      margin-top: 2px;
+    }
+    .alert-badge-error  { background: #fee2e2; color: #991b1b; }
+    .alert-badge-warn   { background: #fef9c3; color: #92400e; }
+    .alert-badge-info   { background: #dbeafe; color: #1e40af; }
+    .alert-badge-ok     { background: #dcfce7; color: #166534; }
 
-    .alert-msg  { font-size: 0.8rem; color: #cbd5e1; line-height: 1.4; }
-    .alert-time { font-size: 0.65rem; color: #475569; margin-top: 2px; font-family: 'Courier New', monospace; }
+    .alert-msg  { font-size: 0.82rem; font-weight: 500; color: #1e293b; line-height: 1.5; }
+    .alert-time { font-size: 0.72rem; color: #94a3b8; margin-top: 2px; }
 
     .alert-warn  { border-left: 3px solid #f59e0b; }
     .alert-error { border-left: 3px solid #ef4444; }
@@ -341,23 +376,27 @@
 
   <div class="kpi-row">
     <div class="kpi-card green">
-      <div class="kpi-label">Units Produced</div>
+      <div class="kpi-label">Units Produced Today</div>
       <div class="kpi-value">1,842</div>
+      <div class="kpi-trend up">&#9650; 4.2% vs yesterday</div>
       <div class="kpi-sub">Target: 2,000 &nbsp;|&nbsp; 92.1% to plan</div>
     </div>
     <div class="kpi-card blue">
-      <div class="kpi-label">OEE</div>
+      <div class="kpi-label">Overall Efficiency (OEE)</div>
       <div class="kpi-value">87.3%</div>
+      <div class="kpi-trend up">&#9650; 1.8 pts vs last shift</div>
       <div class="kpi-sub">Availability &middot; Performance &middot; Quality</div>
     </div>
     <div class="kpi-card amber">
       <div class="kpi-label">Defect Rate</div>
       <div class="kpi-value">2.1%</div>
+      <div class="kpi-trend up">&#9660; 0.3% vs yesterday</div>
       <div class="kpi-sub">38 defects &nbsp;|&nbsp; Threshold: 3.0%</div>
     </div>
     <div class="kpi-card green">
-      <div class="kpi-label">Machines Active</div>
+      <div class="kpi-label">Lines Operating</div>
       <div class="kpi-value">5 / 6</div>
+      <div class="kpi-trend flat">&#8594; 1 line in scheduled maintenance</div>
       <div class="kpi-sub">Line 4 in scheduled maintenance</div>
     </div>
   </div>
@@ -372,8 +411,8 @@
       <div class="section-title">Hourly Output &mdash; Target vs Actual</div>
       <svg id="output-chart" aria-label="Hourly output bar chart"></svg>
       <div class="chart-legend">
-        <div class="legend-item"><div class="legend-swatch" style="background:#3b82f6"></div> Target</div>
-        <div class="legend-item"><div class="legend-swatch" style="background:#22c55e"></div> Actual</div>
+        <div class="legend-item"><div class="legend-swatch" style="background:#93c5fd"></div> Target</div>
+        <div class="legend-item"><div class="legend-swatch" style="background:#1e8c45"></div> Actual</div>
       </div>
     </div>
     <div class="alerts-card">
@@ -406,12 +445,12 @@
   ];
 
   const alerts = [
-    { type: 'error', icon: '🔴', msg: 'Line 4: Emergency stop triggered — scheduled maintenance overdue', time: '14:32:11' },
-    { type: 'warn',  icon: '⚠️',  msg: 'Line 2: Motor temperature elevated (82°C) — threshold 75°C', time: '14:28:44' },
-    { type: 'warn',  icon: '⚠️',  msg: 'Line 2: Speed reduced to 71% — operator investigation in progress', time: '14:27:05' },
-    { type: 'info',  icon: '🔵', msg: 'Line 6: Batch changeover complete — Part #B-104 active', time: '13:55:00' },
-    { type: 'ok',   icon: '✅', msg: 'Line 3: Quality check passed — zero defects last 100 units', time: '13:40:22' },
-    { type: 'ok',   icon: '✅', msg: 'Line 1: Scheduled lubrication completed successfully', time: '12:15:09' },
+    { type: 'error', priority: 'CRITICAL', msg: 'Line 4: Emergency stop triggered — scheduled maintenance overdue', time: '14:32:11' },
+    { type: 'warn',  priority: 'WARNING',  msg: 'Line 2: Motor temperature elevated (82°C) — threshold 75°C', time: '14:28:44' },
+    { type: 'warn',  priority: 'WARNING',  msg: 'Line 2: Speed reduced to 71% — operator investigation in progress', time: '14:27:05' },
+    { type: 'info',  priority: 'INFO',     msg: 'Line 6: Batch changeover complete — Part #B-104 active', time: '13:55:00' },
+    { type: 'ok',    priority: 'RESOLVED', msg: 'Line 3: Quality check passed — zero defects last 100 units', time: '13:40:22' },
+    { type: 'ok',    priority: 'RESOLVED', msg: 'Line 1: Scheduled lubrication completed successfully', time: '12:15:09' },
   ];
 
   // Render lines
@@ -429,7 +468,7 @@
       </div>
       <div class="line-metrics">
         <div class="metric"><div class="metric-label">Output</div><div class="metric-value">${line.output.toLocaleString()}</div></div>
-        <div class="metric"><div class="metric-label">Product</div><div class="metric-value" style="font-size:0.78rem;color:#94a3b8">${line.product}</div></div>
+        <div class="metric"><div class="metric-label">Product</div><div class="metric-value" style="font-size:0.8rem;color:#475569;font-family:'Segoe UI',Arial,sans-serif">${line.product}</div></div>
       </div>
       <div class="speed-bar-wrap">
         <div class="speed-bar-label"><span>Line Speed</span><span style="color:${sc2}">${line.speed}%</span></div>
@@ -450,17 +489,17 @@
     let s = '';
     [0, 50, 100, 150, 200].forEach(v => {
       const y = pT + cH - (v / maxVal) * cH;
-      s += `<line x1="${pL}" y1="${y}" x2="${pL+cW}" y2="${y}" stroke="#1e293b" stroke-width="1"/>`;
-      s += `<text x="${pL-4}" y="${y+4}" text-anchor="end" font-size="9" fill="#475569">${v}</text>`;
+      s += `<line x1="${pL}" y1="${y}" x2="${pL+cW}" y2="${y}" stroke="#e2e8f0" stroke-width="1"/>`;
+      s += `<text x="${pL-4}" y="${y+4}" text-anchor="end" font-size="9" fill="#64748b">${v}</text>`;
     });
     hourlyData.forEach((d, i) => {
       const x = pL + i * gW + gW / 2;
       const tH = (d.target / maxVal) * cH, aH = (d.actual / maxVal) * cH;
-      s += `<rect x="${x-bW-2}" y="${pT+cH-tH}" width="${bW}" height="${tH}" fill="#3b82f6" opacity="0.6" rx="2"/>`;
-      s += `<rect x="${x+2}" y="${pT+cH-aH}" width="${bW}" height="${aH}" fill="${d.actual >= d.target ? '#22c55e' : '#f59e0b'}" opacity="0.85" rx="2"/>`;
-      s += `<text x="${x}" y="${pT+cH+18}" text-anchor="middle" font-size="9" fill="#475569">${d.hour}</text>`;
+      s += `<rect x="${x-bW-2}" y="${pT+cH-tH}" width="${bW}" height="${tH}" fill="#93c5fd" opacity="1" rx="2"/>`;
+      s += `<rect x="${x+2}" y="${pT+cH-aH}" width="${bW}" height="${aH}" fill="${d.actual >= d.target ? '#1e8c45' : '#f59e0b'}" opacity="0.9" rx="2"/>`;
+      s += `<text x="${x}" y="${pT+cH+18}" text-anchor="middle" font-size="9" fill="#64748b">${d.hour}</text>`;
     });
-    s += `<line x1="${pL}" y1="${pT+cH}" x2="${pL+cW}" y2="${pT+cH}" stroke="#2d3748" stroke-width="1"/>`;
+    s += `<line x1="${pL}" y1="${pT+cH}" x2="${pL+cW}" y2="${pT+cH}" stroke="#cbd5e1" stroke-width="1"/>`;
     svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
     svg.innerHTML = s;
   }
@@ -472,7 +511,7 @@
   alerts.forEach(a => {
     const item = document.createElement('div');
     item.className = `alert-item alert-${a.type}`;
-    item.innerHTML = `<div class="alert-icon">${a.icon}</div><div><div class="alert-msg">${a.msg}</div><div class="alert-time">${a.time}</div></div>`;
+    item.innerHTML = `<div class="alert-badge alert-badge-${a.type}">${a.priority}</div><div><div class="alert-msg">${a.msg}</div><div class="alert-time">${a.time}</div></div>`;
     alertsList.appendChild(item);
   });
 
